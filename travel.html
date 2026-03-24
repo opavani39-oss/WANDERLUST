@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Cost Explorer</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#f4f7fb;
+}
+
+/* HEADER */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+background:#0077ff;
+color:white;
+}
+
+nav a{
+margin:0 10px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+/* HERO */
+.hero{
+text-align:center;
+padding:80px;
+background:#0077ff;
+background:url("css\ image.jpeg");
+color:white;
+}
+
+.hero button{
+padding:10px 20px;
+margin-top:20px;
+border:none;
+background:#ff9800;
+color:white;
+cursor:pointer;
+}
+
+/* DESTINATIONS */
+.destinations{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:40px;
+}
+
+.card{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.card h3, .card p{
+margin:10px;
+}
+
+.card a{
+display:inline-block;
+margin:10px;
+padding:8px 15px;
+background:#0077ff;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>NNP Explorer</h1>
+<nav>
+<a href="home.html">Home</a>
+<a href="explore.html">Explore</a>
+<a href="#">Calculator</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Discover Tourist Places Around the World</h2>
+<p>Click below to explore destinations</p>
+</section>
+
+<section class="destinations">
+
+<div class="card">
+<img src="paris.jpeg">
+<h3>Paris</h3>
+<p>Country: France</p>
+<p>Avg Travel Cost: $1200 - $2000</p>
+<a href="paris.html">View Details</a>
+</div>
+
+<div class="card">
+<img src="tokyo.jpeg">
+<h3>Tokyo</h3>
+<p>Country: Japan</p>
+<p>Avg Travel Cost: $1500 - $2500</p>
+<a href="tokyo.html">View Details</a>
+</div>
+
+<div class="card">
+<img src="dubai image.jpeg">
+<h3>Dubai</h3>
+<p>Country: UAE</p>
+<p>Avg Travel Cost: $1000 - $1800</p>
+<a href="dubai.html">View Details</a>
+</div>
+
+<div class="card">
+<img src="bali.jpeg">
+<h3>Bali</h3>
+<p>Country: Indonesia</p>
+<p>Avg Travel Cost: $900 - $1600</p>
+<a href="bali.html">View Details</a>
+</div>
+<div class="card">
+<img src="maldives.jpeg">
+<h3>maldives</h3>
+<p>country:maldives</p>
+<p>Avg Travel Cost: $900 - $1600</p>
+<a href="maldives.html">View Details</a>
+</div>
+<div class="card">
+<img src="new york.jpeg">
+<h3>america</h3>
+<p>Country:america</p>
+<p>Avg Travel Cost: $900 - $1600</p>
+<a href="new york.html">View Details</a>
+</div>
+<div class="card">
+<img src="switzerland.jpg">
+<h3>bern</h3>
+<p>Country:switzerland</p>
+<p>Avg Travel Cost: $900 - $1600</p>
+<a href="switzerland.html">View Details</a>
+</div>
+<div class="card">
+<img src="vietnam.jpeg">
+<h3>hanoi</h3>
+<p>Country:vietnam</p>
+<p>Avg Travel Cost: $900 - $1600</p>
+<a href="vietanm.html">View Details</a>
+</div>
+</section>
+<center>
+<section class="calculator">
+
+<h2>Travel Cost Calculator</h2>
+
+<label>Destination Distance (km)</label>
+<input type="text" placeholder="Enter distance">
+
+<label>Number of Days</label>
+<input type="number">
+
+<label>Number of Travelers</label>
+<input type="number">
+
+<button>Calculate Cost</button>
+
+</section>
+
+<section class="map">
+<h2>Interactive Map</h2>
+<p>Map will show your location and destination route.</p>
+
+<img src="css image.jpeg" alt="css image">
+</center>
+<footer>
+<p>© 2026 NNP Explorer</p>
+</footer>
+</body>
+</html>
